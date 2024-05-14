@@ -61,7 +61,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'rainbowlin@zju.edu.cn'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
