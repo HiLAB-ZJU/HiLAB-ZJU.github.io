@@ -6,8 +6,8 @@ event: 逐浪AI Agent2025黑客松创意赛
 
 location: 杭州市
 
-date: '2024-05-10T09:00:00Z'
-date_end: '2024-05-11T18:00:00Z'
+date: '2025-05-10T09:00:00Z'
+date_end: '2025-05-11T18:00:00Z'
 all_day: false
 
 authors: []
