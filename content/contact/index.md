@@ -12,7 +12,7 @@ sections:
       text: ''
       
       # Contact details
-      email: hilab@zju.edu.cn
+      email: rainbowlin@zju.edu.cn
       address:
         street: 浙江省杭州市滨江区浦沿街道江汉路
         city: 杭州市
