@@ -15,7 +15,7 @@ sections:
           - 硕士研究生
           - 实习生
         * 浙江大学滨江研究院：
-          - 博士后（计院联培）
+          - [博士后（计院联培）](https://mp.weixin.qq.com/s/feEYSIenNTLjgaw3KSgDzw)
           - 算法工程师（硕士以上）
           - 实习生
 
