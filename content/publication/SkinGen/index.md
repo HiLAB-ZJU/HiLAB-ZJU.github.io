@@ -38,7 +38,7 @@ tags:
 # featured: false
 
 links:
-- name: Custom Link
+- name: 
   url: https://dl.acm.org/doi/abs/10.1145/3708359.3712098
   url_pdf: https://arxiv.org/pdf/2404.14755
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
