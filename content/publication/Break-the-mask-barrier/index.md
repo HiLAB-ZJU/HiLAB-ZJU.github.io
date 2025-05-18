@@ -1,19 +1,24 @@
 ---
-title: "Facial AU-aid hypomimia diagnosis based on GNN "
+title: '"Break the Mask Barrier": An AU-based Rehabilitation Training System for Parkinson''s Hypomimia'
 authors:
+- Xueyan Cai
 - 徐荥璟
-- 林博
+- Zihong Zhou
+- Mengru Xue
+- Zhengke Li
+- Chengtian Weng
 - Wei Luo
-- Shuiguang Deng
+- Cheng Yao
+- 林博
 - Jianwei Yin
 
 # Author notes (optional)
-# author_notes:
-#   - 'Equal contribution'  
-#   - 'Equal contribution'
+author_notes:
+  - 'Equal contribution'  
+  - 'Equal contribution'
 
-date: "2023-04-07T00:00:00Z"
-doi: ""
+date: "2025-04-26T00:00:00Z"
+doi: "https://doi.org/10.1145/3706599.3719706"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-01-01T00:00:00Z"
@@ -24,23 +29,23 @@ publishDate: "2023-01-01T00:00:00Z"
 publication_types: ["conference-paper"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Medical Imaging with Deep Learning"
-publication_short: "MIDL 2023"
+publication: "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems"
+publication_short: "CHI 2025"
 
-abstract: Hypomimia is a prevalent symptom of Parkinson's Disease(PD). It is characterized by reduced facial expression and delayed facial movement. The work proposes a framework to use Graph Neural Network(GNN) to extract related action unit(AU) features on the facial smiling videos to help to improve the recognition of hypomimia with PD. AU is an effective representation of the facial state and movement, while GNN has great capability to present relationship information between facial areas. A related AU representation can pay more attention to the relationships between the facial areas in order to increase the accuracy of the diagnosis. Experiments were conducted using an in-house dataset of 105 facial smiling videos, which contains 55 healthy control(HC) participants and 50 PD patients. Our method's performance was compared to that of random forest (RF) and support vector machine (SVM) classifiers.  Our method achieved an Accuracy, PPV, TPR, and F1 score of {91.7%, 92.8%, 90.6%, 91.7%}, while the RF and SVM achieved {84.5%,84.8%, 82.7%, 83.7%} and {88.7%, 88.0%, 88,7%, 88.3%} respectively on the dataset. 
+abstract: Hypomimia, commonly known as the “masked face,” is a nonmotor symptom of Parkinson’s disease characterized by delayed facial movements and expressions, as well as difficulties in articulation and emotion. Currently, the primary method for detecting hypomimia relies on subjective evaluations by neurologists, and conventional rehabilitation approaches predominantly depend on verbal prompts from physicians. There remains a lack of accessible, patient-friendly, and scientifically rigorous assistive tools for hypomimia treatment. We aim to develop a digital therapy system based on Action Units (AUs) for the rehabilitation of Parkinson’s hypomimia. This system enhances engagement through rehabilitation exercises set to Chinese opera music while also fostering initiative by integrating digital therapy with traditional facial training methods. A pilot study involving seven patients with hypomimiasymptoms and ten physicians was conducted. The results indicated a positive impact on participants’ self-efficacy, validating the system’s applicability in therapeutic settings and highlighting its potential value in clinical applications.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-# tags:
-# - Source Themes
+tags:
+- CCF-A
 # featured: false
 
 links:
 - name: "Paper"
-  url: "https://2023.midl.io/papers/s101"
+  url: "https://dl.acm.org/doi/full/10.1145/3706599.3719706"
 - name: "PDF"
-  url: "https://openreview.net/pdf?id=BLWmZy6kSL7"
+  url: "https://dl.acm.org/doi/pdf/10.1145/3706599.3719706"
 
 
 # Featured image
