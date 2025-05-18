@@ -1,5 +1,5 @@
 ---
-title: "HypomimiaCoach: An AU-based Digital Therapy System for Hypomimia Detection & Rehabilitation with Parkinson's Disease"
+title: "SkinGEN: An explainable dermatology diagnosis-to-generation framework with interactive vision-language models"
 authors:
 - 林博
 - 徐荥璟
@@ -16,28 +16,28 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: "2024-04-07T00:00:00Z"
-doi: ""
+date: "2025-03-24T00:00:00Z"
+doi: "https://doi.org/10.1145/3708359.3712098"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-01-01T00:00:00Z"
+publishDate: "2025-05-17T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["conference-paper"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "The ACM Conference on Intelligent User Interfaces 2025"
+publication_short: "IUI 2025"
 
 abstract: With the continuous advancement of vision language models (VLMs) technology, remarkable research achievements have emerged in the dermatology field, the fourth most prevalent human disease category. However, despite these advancements, VLM still faces "hallucination" in dermatological diagnosis, and due to the inherent complexity of dermatological conditions, existing tools offer relatively limited support for user comprehension. We propose SkinGEN, a diagnosis-to-generation framework that leverages the stable diffusion (SD) method to generate reference demonstrations from diagnosis results provided by VLM, thereby enhancing the visual explainability for users. Through extensive experiments with Low-Rank Adaptation (LoRA), we identify optimal strategies for skin condition image generation. We conduct a user study with 32 participants evaluating both the system performance and explainability. Results demonstrate that SkinGEN significantly improves users' comprehension of VLM predictions and fosters increased trust in the diagnostic process. This work paves the way for more transparent and user-centric VLM applications in dermatology and beyond.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-# tags:
-# - Source Themes
+tags:
+- CCF-B
 # featured: false
 
 links:
