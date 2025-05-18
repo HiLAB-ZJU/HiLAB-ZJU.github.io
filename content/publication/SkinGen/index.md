@@ -37,15 +37,15 @@ tags:
 - CCF-B
 # featured: false
 
-links:
-- name: 
-  url: https://dl.acm.org/doi/abs/10.1145/3708359.3712098
-  url_pdf: https://arxiv.org/pdf/2404.14755
+# links:
+# - name: “Paper”
+url: https://dl.acm.org/doi/abs/10.1145/3708359.3712098
+url_pdf: https://arxiv.org/pdf/2404.14755
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: '#'
 # url_poster: '#'
 # url_project: ''
-# url_slides: ''
+# url_slides: ''ß
 # url_source: '#'
 # url_video: '#'
 
