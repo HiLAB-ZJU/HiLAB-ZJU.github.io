@@ -40,14 +40,8 @@ links:
 - name: "Paper"
   url: "https://2023.midl.io/papers/s101"
 - name: "PDF"
-  url_pdf: "https://openreview.net/pdf?id=BLWmZy6kSL7"
-# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_dataset: '#'
-# url_poster: '#'
-# url_project: ''
-# url_slides: ''
-# url_source: '#'
-# url_video: '#'
+  url: "https://openreview.net/pdf?id=BLWmZy6kSL7"
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
