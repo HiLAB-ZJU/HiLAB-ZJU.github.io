@@ -58,7 +58,7 @@ abstract: The prognoses and therapeutic responses of patients with intrahepatic 
 
 links:
 - name: Paper
-  url: “https://journals.lww.com/hep/abstract/9900/spatial_single_cell_proteomics_landscape_decodes.1179.aspx”
+  url: "https://journals.lww.com/hep/abstract/9900/spatial_single_cell_proteomics_landscape_decodes.1179.aspx"
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: '#'
