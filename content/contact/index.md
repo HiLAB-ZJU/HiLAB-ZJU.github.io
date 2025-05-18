@@ -42,8 +42,8 @@ sections:
         country: 中国
         country_code: CN
       coordinates:
-        latitude: '30.17935472929559'
-        longitude: '120.14205071826224'
+        latitude: '30.17980847915665'
+        longitude: '120.14176031941066'
       
       # Automatically link email and phone or display as text?
       autolink: true
