@@ -23,7 +23,7 @@ date: "2025-03-24T00:00:00Z"
 doi: "https://arxiv.org/abs/2410.09772"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-01-01T00:00:00Z"
+publishDate: "2025-05-17T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
