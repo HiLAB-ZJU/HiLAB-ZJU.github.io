@@ -21,11 +21,11 @@ publishDate: "2023-01-01T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["conference-paper"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Medical Imaging with Deep Learning"
+publication_short: "MIDL 2023"
 
 abstract: Hypomimia is a prevalent symptom of Parkinson's Disease(PD). It is characterized by reduced facial expression and delayed facial movement. The work proposes a framework to use Graph Neural Network(GNN) to extract related action unit(AU) features on the facial smiling videos to help to improve the recognition of hypomimia with PD. AU is an effective representation of the facial state and movement, while GNN has great capability to present relationship information between facial areas. A related AU representation can pay more attention to the relationships between the facial areas in order to increase the accuracy of the diagnosis. Experiments were conducted using an in-house dataset of 105 facial smiling videos, which contains 55 healthy control(HC) participants and 50 PD patients. Our method's performance was compared to that of random forest (RF) and support vector machine (SVM) classifiers.  Our method achieved an Accuracy, PPV, TPR, and F1 score of {91.7%, 92.8%, 90.6%, 91.7%}, while the RF and SVM achieved {84.5%,84.8%, 82.7%, 83.7%} and {88.7%, 88.0%, 88,7%, 88.3%} respectively on the dataset. 
 
@@ -37,10 +37,11 @@ abstract: Hypomimia is a prevalent symptom of Parkinson's Disease(PD). It is cha
 # featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+- name: "Paper"
+  url: "https://2023.midl.io/papers/s101"
+- name: "PDF"
+  url_pdf: "https://openreview.net/pdf?id=BLWmZy6kSL7"
+# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: '#'
 # url_poster: '#'
 # url_project: ''
