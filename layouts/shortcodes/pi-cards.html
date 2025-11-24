@@ -1,0 +1,68 @@
+{{/* layouts/shortcodes/pi-cards.html */}}
+{{ $group := .Get "group" | default "Principal Investigators" }}
+{{ $page := .Site.GetPage "section" "authors" }}
+{{ $members := slice }}
+
+{{/* 遍历所有作者页面，筛选属于指定 group 的人 */}}
+{{ range $page.Pages }}
+  {{ if and .Params.user_groups (in .Params.user_groups $group) }}
+    {{ $members = $members | append . }}
+  {{ end }}
+{{ end }}
+
+<div class="pi-grid">
+  {{ range $members }}
+    {{/* 获取头像资源 */}}
+    {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+    {{ $avatar_image := "" }}
+    {{/* 如果找到头像，进行缩放处理，这里强制填充为 400x500 以匹配长方形卡片比例 */}}
+    {{ if $avatar }}
+      {{ $avatar_image = $avatar.Fill "640x640 Center" }}
+    {{ end }}
+
+    <div class="pi-card">
+      <div class="pi-image-container">
+        {{ if $avatar_image }}
+          <img src="{{ $avatar_image.RelPermalink }}" alt="{{ .Title }}" class="pi-image">
+        {{ end }}
+      </div>
+      
+      <div class="pi-content">
+        <h3 class="pi-name">{{ .Title }}</h3>
+        <p class="pi-role">{{ .Params.role | markdownify }}</p>
+        <p class="pi-desc">{{ .Params.bio | default .Summary | markdownify }}</p>
+        
+        <div class="pi-tags">
+          {{ range .Params.interests }}
+          <span class="pi-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        
+      {{/* ... 其他内容保持不变 ... */}}
+
+        <div class="pi-socials">
+          
+          {{ range .Params.social }}
+            {{ $pack := .icon_pack | default "fas" }}
+            {{ $icon := .icon | default "link" }}
+            {{ $link := .link | safeURL }}
+            {{ $label := .label | default $icon }}
+            
+            {{ if eq $icon "envelope" }}
+                {{/* 当图标为 envelope 时，以文本形式展示，并带上 mailto: 链接 */}}
+                <a href="mailto:{{ $link }}" aria-label="Email" class="pi-email-link">
+                    <i class="{{ $pack }} fa-{{ $icon }}"></i>
+                    <span class="pi-email-text">{{ $link }}</span>
+                </a>
+            {{ else }}
+                {{/* 其他社交链接：仅显示图标 */}}
+                <a href="{{ $link }}" target="_blank" rel="noopener" aria-label="{{ $label }}">
+                    <i class="{{ $pack }} fa-{{ $icon }}"></i>
+                </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
