@@ -1,0 +1,190 @@
+/* assets/scss/custom.scss - 列表视图 (List View) 样式 */
+
+.pi-grid {
+  /* 保持默认流向，让 100% 宽度的卡片垂直堆叠 */
+  display: flex;
+  flex-direction: column; /* 确保堆叠 */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pi-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  
+  // ===== 核心修改：让图片和内容并排 =====
+  display: flex;
+  width: 100%; /* 占满整个容器宽度 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+  
+  // 移除 transform，因为列表视图通常不需要悬浮效果
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.pi-image-container {
+  // ===== 核心修改：固定图片区域宽度和高度 =====
+  width: 200px;  /* 固定图片区域宽度 */
+  height: 250px; /* 固定图片区域高度 */
+  flex-shrink: 0;
+  overflow: hidden;
+  
+  /* 仅左侧圆角 */
+  border-radius: 12px 0 0 12px; 
+  background-color: #f8f9fa;
+  
+  .pi-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.pi-content {
+  padding: 1.5rem;
+  flex-grow: 1; /* 占据剩余所有空间 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 让内容在纵向上均匀分布 */
+}
+
+/* 确保社交图标紧贴底部 */
+.pi-socials {
+  /* ... 保持不变，但要确保它在 pi-content 的最底部 ... */
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 1rem;
+}
+
+/* 其他内容样式（名称、角色、标签等）保持不变 */
+
+.pi-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pi-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.pi-role {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  
+  .dark & { color: #a0a0a0; }
+}
+
+.pi-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  
+  .dark & { color: #ccc; }
+}
+
+.pi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pi-tag {
+  background-color: rgba(0,0,0,0.05);
+  color: #555;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  
+  .dark & { 
+    background-color: rgba(255,255,255,0.1); 
+    color: #ddd;
+  }
+}
+
+/* assets/scss/custom.scss - 社交链接样式调整 */
+
+.pi-socials {
+  /* 使得邮箱链接和其他图标能够混合排列 */
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 0.75rem 1rem; /* 上下间距 0.75rem，左右间距 1rem */
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.pi-socials a {
+  color: #888;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+  text-decoration: none; /* 移除默认的下划线 */
+  
+  &:hover {
+    color: var(--bs-primary);
+  }
+}
+
+/* assets/scss/custom.scss - 针对邮箱链接的专门样式 (匹配新截图) */
+
+/* 针对邮箱链接的专门样式 (已调整为较小尺寸) */
+.pi-email-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; 
+  width: 100%; 
+  order: -1; 
+  text-decoration: none; 
+  padding: 0.5rem 0; 
+  
+  /* 图标样式：由 2rem 调小到 1.5rem */
+  i {
+    font-size: 1.5rem !important; 
+    color: #444 !important; 
+    transition: none; 
+  }
+  
+  /* 邮箱地址文本样式：由 1.3rem 调小到 1rem */
+  .pi-email-text {
+    font-size: 1rem !important; 
+    color: var(--bs-primary) !important; 
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &:hover {
+    .pi-email-text {
+      text-decoration: underline; 
+    }
+  }
+}
+
+/* 确保其他社交图标的样式不受影响，仍是小图标 */
+.pi-socials > a:not(.pi-email-link) {
+  width: auto;
+  font-size: 1.2rem; /* 保持其他图标为小尺寸 */
+}
+
+/* 之前针对 PhD Students 的可选样式，如果你不再需要，可以删除 */
+/*
+h2:contains("PhD Students") + .pi-grid .pi-card {
+  width: 250px;
+}
+
+h2:contains("PhD Students") + .pi-grid .pi-image-container {
+  height: 250px;
+}
+*/
