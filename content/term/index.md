@@ -5,7 +5,7 @@ date: 2023-10-24
 type: page # 或者使用 "page"，这告诉 Hugo 这是一个普通页面，不是 Widget 页面
 layout: page
 toc: false  # 是否显示右侧目录
-url: /XnrdBEdEVjYG/
+url: XnrdBEdEVjYG/
 ---
 
 ## 健康信息创新实验室
@@ -22,4 +22,8 @@ url: /XnrdBEdEVjYG/
 
 ## Alumni
 
+<<<<<<< HEAD:content/term/index.md
 {{< pi-cards group="test" >}} -->
+=======
+{{< pi-cards group="Alumni" >}} -->
+>>>>>>> f38ca92e82900ac0988a34e4a5b95f4769e6a36c:content/team/index.md
