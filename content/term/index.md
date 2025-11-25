@@ -14,10 +14,3 @@ url: XnrdBEdEVjYG/
 
 ---
 
-<!-- ## PhD Students
-
-{{< pi-cards group="PhD Students" >}}
-
----
-
-
