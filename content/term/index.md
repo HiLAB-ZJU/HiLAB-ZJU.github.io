@@ -20,10 +20,4 @@ url: XnrdBEdEVjYG/
 
 ---
 
-## Alumni
 
-<<<<<<< HEAD:content/term/index.md
-{{< pi-cards group="test" >}} -->
-=======
-{{< pi-cards group="Alumni" >}} -->
->>>>>>> f38ca92e82900ac0988a34e4a5b95f4769e6a36c:content/team/index.md
