@@ -10,11 +10,11 @@ url: /XnrdBEdEVjYG/
 
 ## 健康信息创新实验室
 
-{{< pi-cards group="健康信息创新实验室" >}}
+{{< pi-cards group="Team" >}}
 
-<!-- ---
+---
 
-## PhD Students
+<!-- ## PhD Students
 
 {{< pi-cards group="PhD Students" >}}
 
@@ -22,4 +22,4 @@ url: /XnrdBEdEVjYG/
 
 ## Alumni
 
-{{< pi-cards group="Alumni" >}} -->
+{{< pi-cards group="test" >}} -->
